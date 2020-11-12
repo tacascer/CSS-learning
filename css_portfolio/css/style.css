@@ -1,3 +1,77 @@
+/* Color palette: https://coolors.co/1c1c1c-92817a-f1dabf-fffbff-008148
+
+--eerie-black: #1c1c1cff;
+--light-slate-gray: #7c90a0ff;
+--grullo: #b5aa9dff;
+--ash-gray: #b9b7a7ff;
+--aquamarine: #a5ffd6ff;
+--cultured: #FBFAF8;
+--bistre: #251605;
+--yellow-crayola: #F6E27F;
+*/
+
+/* Global styles
+-----------------------------*/
+body {
+  color: #1c1c1cff;
+}
 img {
   width: 300px;
+}
+h2,
+h3 {
+  padding: 8px;
+}
+/* Profile 
+-----------------------------*/
+header {
+  background: #7c90a0;
+  color: #320d6d;
+  font-size: 20px;
+}
+/* Projects 
+-----------------------------*/
+.projects {
+  background: #a5ffd6;
+}
+.projects .btn {
+  color: #ca054d;
+  background: #f6e27f;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 4px;
+}
+.projects .btn:hover {
+  text-decoration: none;
+  background: rgba(246, 226, 127, 50%);
+}
+.projects h2 {
+  color: #23022e;
+  background: #d74e09;
+}
+.projects h3 {
+  color: #235789;
+  background: #ffe74c;
+}
+/* Work Experience
+-----------------------------*/
+.work_experience {
+  background: #b9b7a7;
+}
+.work_experience h2 {
+  color: #f44e3f;
+  background: #3993dd;
+}
+.work_experience h3 {
+  color: #18020c;
+  background: #d81e5b;
+}
+/* Education
+-----------------------------*/
+
+/* Contact Info
+-----------------------------*/
+footer {
+  color: #251605;
+  background: #7c90a0;
 }
