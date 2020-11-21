@@ -14,27 +14,42 @@
 -----------------------------*/
 body {
   color: #1c1c1cff;
-  margin: 0;
-  padding: 0;
+  margin: 0; /*This is to stretch the page to the borders of the website*/
+  padding: 0; /*This is to stretch the page to the borders of the website*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 img {
-  width: 300px;
+  width: 300px; /*We do this so that the images aren't as big. We also pair this with 600 wide images to accomodate Iris displays*/
 }
-h2,
+h1 {
+  font-size: 100px;
+  line-height: 1; /*Reduce the space between the h1 and h2 elements*/
+}
+h2 {
+  font-size: 45px;
+}
 h3 {
-  padding: 8px;
-  margin: 10px 0;
+  padding: 8px 0;
+  margin: 10px 0; /*This is for spacing between headings and buttons*/
+}
+h1,
+h2 {
+  font-family: "Caveat", cursive;
+  font-weight: 400; /*remove the bold of h1 and h2*/
+  margin: 0; /*Reduce the margin so that there isn't much space between them*/
 }
 .content-wrap {
-  width: 800px;
-  margin: 0 auto;
-  padding: 30px 0;
+  width: 800px; /*This is for centering (sort of)*/
+  margin: 0 auto; /*We do this so that the content centers itself*/
+  padding: 30px 0; /*This is to cover the gaps between the contents */
 }
 /* Profile 
 -----------------------------*/
 header {
   background: #7c90a0;
-  color: #320d6d;
+  color: #c5e063;
   font-size: 20px;
 }
 /* Projects 
@@ -68,7 +83,7 @@ header {
   background: #b9b7a7;
 }
 .work_experience h2 {
-  color: #f44e3f;
+  color: #23022e;
   background: #3993dd;
 }
 .work_experience h3 {
