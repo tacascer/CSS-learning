@@ -81,14 +81,15 @@ header {
   text-decoration: none;
   background: rgba(246, 226, 127, 50%);
 }
-.project-item {
-  overflow: hidden; /*Clears the parent element of img so that they all align*/
-  border-bottom: 1px dashed #1c1c1cff;
-  padding: 25px 0; /*Adds a bit of padding so that the text isn't stuck to the images*/
+.project-container {
+  display: flex;
+  padding: 0px;
+  justify-content: space-around;
 }
-.project-item img {
-  float: left;
-  margin-right: 20px;
+.project-item {
+  padding: 5px;
+  flex: 1 1 auto;
+  display: inline-block;
 }
 .projects h2 {
   color: #23022e;
@@ -98,6 +99,7 @@ header {
   color: #235789;
   background: #ffe74c;
   margin-top: 0; /*Allign the project names with the top of images.*/
+  padding-left: 5px;
 }
 /* Work Experience
 -----------------------------*/
@@ -111,7 +113,12 @@ header {
 .work_experience h3 {
   color: #18020c;
   background: #d81e5b;
-  padding-left: 20px;
+}
+/*Creates a grid for Work Experience*/
+.job-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  column-gap: 20px;
 }
 /* Education
 -----------------------------*/
@@ -121,4 +128,16 @@ header {
 footer {
   color: #251605;
   background: #7c90a0;
+}
+/*Creates a flexbox container for the footer*/
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+/*Space the links out, and adds accessibility*/
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
 }
