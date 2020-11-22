@@ -32,6 +32,9 @@ body {
 img {
   width: 300px; /*We do this so that the images aren't as big. We also pair this with 600 wide images to accomodate Iris displays*/
 }
+.center-header {
+  text-align: center;
+}
 h1 {
   font-size: 100px;
   line-height: 1; /*Reduce the space between the h1 and h2 elements*/
@@ -81,7 +84,7 @@ header {
 .project-item {
   overflow: hidden; /*Clears the parent element of img so that they all align*/
   border-bottom: 1px dashed #1c1c1cff;
-  padding: 25px 0;
+  padding: 25px 0; /*Adds a bit of padding so that the text isn't stuck to the images*/
 }
 .project-item img {
   float: left;
@@ -108,6 +111,7 @@ header {
 .work_experience h3 {
   color: #18020c;
   background: #d81e5b;
+  padding-left: 20px;
 }
 /* Education
 -----------------------------*/
