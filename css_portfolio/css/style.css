@@ -12,6 +12,15 @@
 
 /* Global styles
 -----------------------------*/
+/* Box model fix */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 body {
   color: #1c1c1cff;
   margin: 0; /*This is to stretch the page to the borders of the website*/
@@ -69,6 +78,15 @@ header {
   text-decoration: none;
   background: rgba(246, 226, 127, 50%);
 }
+.project-item {
+  overflow: hidden; /*Clears the parent element of img so that they all align*/
+  border-bottom: 1px dashed #1c1c1cff;
+  padding: 25px 0;
+}
+.project-item img {
+  float: left;
+  margin-right: 20px;
+}
 .projects h2 {
   color: #23022e;
   background: #d74e09;
@@ -76,6 +94,7 @@ header {
 .projects h3 {
   color: #235789;
   background: #ffe74c;
+  margin-top: 0; /*Allign the project names with the top of images.*/
 }
 /* Work Experience
 -----------------------------*/
