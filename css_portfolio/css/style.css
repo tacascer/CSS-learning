@@ -44,7 +44,7 @@ h2 {
 }
 h3 {
   padding: 8px 0;
-  margin: 10px 0; /*This is for spacing between headings and buttons*/
+  margin-bottom: 0;
 }
 h1,
 h2 {
@@ -56,6 +56,21 @@ h2 {
   width: 800px; /*This is for centering (sort of)*/
   margin: 0 auto; /*We do this so that the content centers itself*/
   padding: 30px 0; /*This is to cover the gaps between the contents */
+}
+.item-details h3 + p {
+  font-style: italic;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+/*Class for seperators*/
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 25px 0;
+}
+/*Omit the seperator for the item*/
+.divider > section:last-of-type {
+  border-bottom: none;
 }
 /* Profile 
 -----------------------------*/
@@ -81,11 +96,12 @@ header {
   text-decoration: none;
   background: rgba(246, 226, 127, 50%);
 }
+/*Flexbox container for projects*/
 .project-container {
   display: flex;
-  padding: 0px;
   justify-content: space-around;
 }
+/*Flexbox items for each projects*/
 .project-item {
   padding: 5px;
   flex: 1 1 auto;
@@ -99,7 +115,7 @@ header {
   color: #235789;
   background: #ffe74c;
   margin-top: 0; /*Allign the project names with the top of images.*/
-  padding-left: 5px;
+  padding-left: 5px; /*Adds a bit of padding so that the text isn't stuck at the edge of the background*/
 }
 /* Work Experience
 -----------------------------*/
